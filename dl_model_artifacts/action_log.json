@@ -1,0 +1,4802 @@
+[
+  {
+    "flow_id": "0061c0a646336ba3",
+    "risk_tier": 2,
+    "risk_label": "Elevated",
+    "action": "RE_AUTHENTICATE",
+    "description": "Exploitation attempt -- forcing 802.1X re-auth.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3a1d7b6848ba4816",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c21260d59ec18c21",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e27c90338d0951bd",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "822584b2c67cc029",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "df9c7f6d462800fe",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "fbce594eb3819241",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8504ed062c7efeb3",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "383e6d13044307c8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b6b64a41c2919e41",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2aa738bd2d317dfb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "574000dd2705722c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "318330c0b853e556",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "209b0d3325245ca9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a54a511bcc9ae908",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b0a6721da6c6bd9f",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a5089dd3303d1513",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9994
+  },
+  {
+    "flow_id": "a28d3d86a39697d7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "21f507c9d745ccf7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a5d297901a37fa97",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "13d246d795c82b06",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4b6c866311b89807",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b504951a2fc92466",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "021f3c3165ad58b6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a4cd837c82018a0c",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bca75cc93d8228c2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "316a5f2ab04a4506",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e43752d2cb0d9e77",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "42a3ec7f5bda6ac6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "906ba13f506ec9f0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "627fed6314c7276a",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "307f595da5e8f7ab",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7d92808156cbd86f",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7565da98fd4d9626",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dc1fb99bfcf683c9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "37eb97cdefcb9553",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c4cb97f5d7aa74c2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c41d5b8d56d26ce4",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dc1ef1126dc7606f",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "43acfda85e8dcee2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b9de80ce62a2b779",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e3b0acc64de65b02",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1b37288a3dc7f38c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "025bb2dc4bbb7fcc",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "96e08f65161c37f8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e9ab33575cccb8f0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bf562a06cbb9142f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7af108a04dddb141",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "699679a5dd94e885",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "979442b1474f6d9d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c13a639014177d8a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e4977e081448d854",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a1b798881c824994",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "07ed63ea39815de6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "890cb5590aa320f5",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "08466863cebffbe6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8dbde6785030bfb1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e64e2629b8d35b9c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "41e1afba69efe1f3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4c232f337fd8c9c5",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8b0844cf5149c3ea",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0e916ddeba25dd0d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ecb6c9dbdb1f658b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1619c0ec29cc908d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2438c2deda85699c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dde43db281296204",
+    "risk_tier": 2,
+    "risk_label": "Elevated",
+    "action": "RE_AUTHENTICATE",
+    "description": "Exploitation attempt -- forcing 802.1X re-auth.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b4c0b9b4ed33ed29",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "affc348ef10e40c0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "849735272b267fe0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ad3e42af8fd3c3fb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "eee74eb1f7c0a67f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1e4f2cd482724cc7",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f7a8a4b8317ba679",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a9a9003d7b46b61d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "10ddbdfb67812c69",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8e436ef8af0de157",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ae2c3245bf092b8c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f3fa21ba15edbd17",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9a292cbd1123132d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3040d79227ecb5dd",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d4b2444da3bf64f0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "67ee0e18d97e2b31",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0c33e85f51a1a00b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4133b60bb938e189",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c1fd132da7899c2a",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f2c388cb57100874",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "572a791fcc4a1235",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "43a125e1a302b334",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b9cdfa9360c5286a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bb5bc091161dc8ab",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1066ccb11450f106",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d6aca7f3b913c7c8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c7f5ecc823b2934c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "24b3b5243ab912bc",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "102f1db72374a135",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d2aa58d0fd57ad87",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "22775cfb1afcde87",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0b15cbce3571428f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7e340f255324fc85",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c549ff40d565a2cb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "38e2a74808204d84",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a6f3018f865f063e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "48b117627d8d477a",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9a207b5b738ea0f8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ce02b04c00130f43",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 0.9866
+  },
+  {
+    "flow_id": "dff92eedf152e50a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "514be13879aabc01",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ab6e136827e2444c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "68243406141d01da",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0ab2822c8437544b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4122aa141b14bccc",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f57d9a7357d5edc7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7c45978344ef1f6b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a9817a5265442507",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "615845727804ef10",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dec58e1c370791b5",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ba9939ae0ae2fd2f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 0.9998
+  },
+  {
+    "flow_id": "9bf53bbf7a28b201",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "78e3b0ceac25a2af",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c2c8fb42e00b1450",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "802d388ece26de89",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f3438552764e10f9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b5c5e8a26a19f212",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f7567dc197857b30",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f33695682aa5c339",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "eb26b2e88edbc49a",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3aba99b6e18ef2f7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4e529c368446e150",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bfd08b82f9be4e2e",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "73b876975a055a34",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e0a2466e56fe02d0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4dcdc7f6b4cadc4d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5fcfab71ce49acc0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c83064715ca78a8e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "127fc1d209ebfb97",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "04d4a5a7d2425ac8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "580802f412e6222f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "288b2cef7b3ecc84",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "24787c77ae1f1491",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "414512c4fc1b5741",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "884469cede0d51d7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d0c790d4b6b05a16",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "67a45009baf983d2",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f9b0dc900d9f65b5",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e2939cb5a3174883",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0f1b6837b09d1cff",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "385d28823bd8c0fb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8e996c4ba363e86a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "63ee561538e490e0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5ec4264827fa021d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "abd7e9c9370ab84a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "22a2968b296f1514",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6739ba4222290ff7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0ef254b12e31164a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bbc554bcfb8c14e5",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9993
+  },
+  {
+    "flow_id": "a38844c5d4ccc77d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "447329fd55d30527",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3c8458340d09e3d1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6fb79cd32d3ace07",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5665995f5ee725c1",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a096fc679f6077d7",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8961f75e70dcbfd0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c295694a1a58deaa",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f09a2201b4e7fcf3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "296580b7d3d5a6ad",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7d75e40282f3d86d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "170f01a141eb1649",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "de008f066d983056",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9c5373487e99df8d",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d4b5764d884a5cc0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bd08dcdd89dfd2e5",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d9f038cc4b2580b9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7791a64cf6eb311d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dba027bbf6bfb6cb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "696304d22db21e0e",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "caec63a21b4de3d7",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9989
+  },
+  {
+    "flow_id": "b61707de06e31899",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a41cec9bbb8b7e08",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8225444868d350f7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 0.9184
+  },
+  {
+    "flow_id": "2964b74b1943a494",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6a4e30d9b5c40135",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e88f10e7f0682056",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2d8efc3a193a10c9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3ffbb8decaa0eb62",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "92bcbff5e93a4c99",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5a144be3cf5c861f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2f0d5af0f952d0d8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2e91becaf59407a2",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "58558d4f3dfd7880",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f560065033fe2d0f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5a84099c474fb65f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9f226cdbd59d9183",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d99249bc7f6fa81c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "206aff4b351ebd7e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8e4eeae04ba573b2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a1a720015d866dea",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f096039bf89f7925",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4f79d527f2ce309d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 0.9999
+  },
+  {
+    "flow_id": "d78874f3ea51a204",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2e7eb4bd8833fa07",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "93b6e681d2404e86",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bdf15717c36eae2f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6960b56ce3930dda",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "198a5e7db7eae4aa",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "94808aad922a8af3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3f5de37f81bca7c4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1f03faaf78f9f78e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2af45ee7568554f8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "20032a532acb4022",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b30ca6eed47b6826",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9b1f96e21ad90186",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f3301ebf6dd67254",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "783679ce339bdb4d",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bbc7e51c73fea9d8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "df10fc31fc098bbf",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "178fb7d20fdb587d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "87d0c94dd87da229",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a9a06bfe2fc40bec",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1316cd9d1deba244",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cbb5af94a17f2bf1",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4188c2c4d8bc9d17",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5f59cc25a988f217",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c6e227bb5632fbac",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5f15c2a88873ebb1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e60f57124c1c6fcc",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "07672effe4965cd5",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8fb41853343d8950",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cee4fc96890653ee",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "fa631c542d1774fb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 0.9997
+  },
+  {
+    "flow_id": "caa72b5fbd55146d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f4be3a874de0baaa",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "534b7df7e3bfa3cd",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "09430f1805ffdb79",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "06ba2f64e2f9275b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "63dd92b5782fd13c",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e660fd087594fb5f",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "86aa150d2cc2e79f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "def4b164409de678",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3170adce2b96fbab",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "58b76741c341b07c",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "53cf5aab18cb3f81",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "480073927d5eccfd",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "37e332c8ac991254",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 0.9999
+  },
+  {
+    "flow_id": "67cf2e14f9b7bfe3",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8a1ff3d17ececec8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c23eed0a6d8803c5",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "05b43cae43d06f6b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4b5a610809ce17db",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c9e3327a32cf8bc4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cf7fb53293f86b7f",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "27bca1cae8e39194",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "72101f89aeee1739",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "944b5648df15885e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "289cc5cf70e190d8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bb1ce65a3a5e685c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d404e272c3957d4b",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3abd4018e7776373",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2399db01fb008db2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c10147f3af6ecb3e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "09fb6c4927387b9a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cd61353fa1df0c76",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "335e60601c920179",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0a33d48b785e5a4c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "89ece1ecb8dc8938",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "09b28495b473954e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6ecb54095a21155e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "af537059655e5690",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3449347a5a6df44b",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ec175efe0da676d2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ec8fb800edde0300",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "629bc16b56f2cd17",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3773217f4de86bdf",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "35da10eac7026f4a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f167694985386272",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9989
+  },
+  {
+    "flow_id": "9865761b3b32596e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "73cb084bc335990f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "50743041d4b46a6c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e667d361b596eb6a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6d13143e724eddb4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "838e2fcbd8b51f13",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2cda1885e5d1cf27",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5bba899f7489e3b7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0cf21fa0527500c7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8ed953453b51557e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9109b79ab60eeea3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dcc98f81cb91ec65",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "18a1a9e3a41631a0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3cf5db996b2ea509",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "624acd7db392a58e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "54ac3becddde7170",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2bab4a75cccb25c4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b33f1ffea96053ed",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8af3d9b91bb94ce6",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "052372a2dedfb95f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cb10952e42586f3d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0c92fb0d12f895c0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "90158a3231809777",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3103a127211ddd22",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8338560c5207bf85",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2057f2a21cb281eb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b65146bf9c04186d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d044cb961fdb81f3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "de4e4e9bd1e01b16",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "99e4958da611cea4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5feacaa6c62ab7c2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8e0347b36526a227",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9dd681ca5d562cb4",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5e2a4d5dbef3d8c9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c97b99e4b2f817e9",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "89728fbf2cda88f1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "227a5651d4e1a559",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e74ef0d1247f2e7e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3ad31f91cba0e44e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2eaaa0556272766b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ce116436afa8416a",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.999
+  },
+  {
+    "flow_id": "a42ff4c6068924f5",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "90c588a97803f363",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0ad4e71b1dec94b0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "534a9cf2720885b7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1f58eeb3fa7506ae",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5ed697c6f454c438",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bb105dc19bef35da",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e5e8baa0a85bcc7d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b49d79948231a81f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a609aa190a1efb60",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "598ac109c591b806",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0b1c616a3383ee02",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7606036ce930fbbe",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "566699419f1e7e34",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b04321ec129b06ad",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a8125fe825c1c638",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2a588afa0d0ada75",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f44de1935fd20587",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8573d1ab0456c5bf",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3baccc94064341f9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "51bf81d8c350cda3",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4bd8b4ae7bb16495",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4d2d126c2f747ca6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "809a231efe4f59c0",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "844f3b372b3bc0aa",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "76d021ce06da8d4e",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a9800df15d52276b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b1dbfc366345fad0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "920b0795875f760d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a30ed4c98b1403c0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0ce086577dac8c12",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a55ac636363ee597",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cf73b4ca7e3bd35d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4e5afb13fdb04aff",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b6859a0bfa8fd4fa",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "53559bbf2b5f42c3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8c667ae8dd2a2972",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3486695e0e7f7c0a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e3f75507e939fd49",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "002e5e06efa5f956",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "95e4c3b0cba754f6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "35006bf11dcb3097",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "52ef1f7636c9b6bd",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e5e167d38020d6b8",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dadb18bad4f138b7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dfe31dccc64ca7e9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "78be97d1184e0d7d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "191c50a493c9f1fb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ea0bd114fabe4e6c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "fbb69437c0aec812",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ee165187fa9952d2",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f9ddebb8c1fdbde2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "adf3c4b8b8b08dc9",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "89632458243fd578",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "eafa7f508f11c760",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b252f29c8fcad3ab",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ca8c09c3fe18df85",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f3ca6d9eec333091",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "64608b2d6865073e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ad73c87c65f79c55",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "441ecd4b8be081ef",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a2c463c1a77330d1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e23af160d22f189f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "069abc87b2230ffa",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "303c53416030118f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0dfc33bc32ce259b",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "962774bea236bc49",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c58cc72b2b193352",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 0.9998
+  },
+  {
+    "flow_id": "516977ec47efb930",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cf348b2982e11459",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c6796323ebbb2e61",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7f8df3bab630f833",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "15fad5bba770b0e0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b750edf65c7442af",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d1eb88b3e77a7d54",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "460602a458658b92",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4a82172d7be1bfbd",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5db09642399615c9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d870ca7b3002213c",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9991
+  },
+  {
+    "flow_id": "8c82d971bd4859ca",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "fbc3c98c1d7efb1f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a2b66338d804ee50",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "982c89b343663bcc",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "88bb5728693995ba",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "46bea9d7cab691de",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8b870972dcbf4b98",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bc00432a7fe9cc1f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ed609d33f71628cc",
+    "risk_tier": 2,
+    "risk_label": "Elevated",
+    "action": "RE_AUTHENTICATE",
+    "description": "Exploitation attempt -- forcing 802.1X re-auth.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3aff714e0fd5fbea",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8c017afbe85e300d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7b1c7badce06fdc7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "26355a89ece7c9e0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "51373b1d2dd15243",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d0f7bce47cfb7c3c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 0.9326
+  },
+  {
+    "flow_id": "01304950c76f0517",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a63e0a5828b61f8a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "73685251d87ad498",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8c5dba6b3d710319",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c0ec4e97c576e1c9",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4dae2c973af62f34",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2b271c0d210c62f7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cf81ffaac77cf37b",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 0.9844
+  },
+  {
+    "flow_id": "8b788bd42360246a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "97054cb7601d7cea",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "509fc3bb0a054a6b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b1f163b03e916aee",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d138f124c0899aec",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1068b1f47191ecb4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c3cd381d0aba791a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9311721250468ca0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "fbce6cd73f4ff777",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "76e0ec6957252ecc",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7439f803ce903883",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5f74013e2581e6a2",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "24c34feb61040cd4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c67f80a090348a97",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e3ce233f861688a2",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a5c5d96f99712d78",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "66c876445830cbed",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7af1be8efc4baa23",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bbd8ffcccc605514",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9992
+  },
+  {
+    "flow_id": "f8bee4e8ff8c80a3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ba85344e0500b4d8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "aa7edb5708042e47",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "392a645d77f7a9df",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7edb640279479f39",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "27b5e39358c56eb0",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9988
+  },
+  {
+    "flow_id": "5e4086f8f7057243",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "1576f0f0c7b5cadb",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "871280e1bb7a9600",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0fe59260e0bb10b6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d2ca3819cb355bbf",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c9227f35e71a14f0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7653d7e7bf039240",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "79876c4d707c6aa0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "90f34463e9cd7388",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d52714e59d21996f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d0183c336a101e93",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6b7dbd2658ae6933",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "953ee9bc2382b15d",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f3d33510d93c2cb7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "acb959217b18c515",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d5385a01d895b16e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "675c1a136ca7f212",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6f7e316046fb29c7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "fcf4815f36ad5d5a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "df5a3209a7c02e59",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "67db264b0fb8d0f3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "395315dc2fff48c1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "929d274df1c88565",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f415a79bd2c6f2c3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bf5ae1b8c62618b5",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c407cb00cacd0d69",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2526759ab02bcb31",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dd5f130daff4b63b",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c5beaf169b081c37",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 0.9998
+  },
+  {
+    "flow_id": "b6594729ee9f253c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bcb28801b81e20cd",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2e15165750b4a645",
+    "risk_tier": 2,
+    "risk_label": "Elevated",
+    "action": "RE_AUTHENTICATE",
+    "description": "Exploitation attempt -- forcing 802.1X re-auth.",
+    "confidence": 0.9916
+  },
+  {
+    "flow_id": "75985cf181ac5c2d",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 0.9999
+  },
+  {
+    "flow_id": "f8828742d53f3763",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "134674dd46c2144e",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9988
+  },
+  {
+    "flow_id": "73dd178460763ff6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a89b49680eb1d568",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c921285c9440c4a6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2bc27a28e7497abc",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "59ef7386556b8e14",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "76ec2b43f09b94c1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "14f43d499a505b3a",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9995
+  },
+  {
+    "flow_id": "3d96cc87abef21f1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7103b0e2632b6983",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "699661540351fa62",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8655f7aec6c60749",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "63420ef2f64a34de",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "092a3dc5de41af9d",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.999
+  },
+  {
+    "flow_id": "a1ae30cbe6ed324e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d0a810a72a4086af",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "20e983d5ec93aad8",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9989
+  },
+  {
+    "flow_id": "0abb0fe7d9cda05f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "8fa8b27279f4dab4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "a990d06edc39cafc",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "07b8c4182255d760",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "481aff3824afc7c9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3b7a85715b0d3889",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4bb1cc33c9d9cdfe",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2a9f54342bee9c92",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b59a5ab8c0c877c0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d4b3cf23ab7c9e4f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "57071e2f766c8a6c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "88409fe9a2b9ffe8",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f3484d226fffe7a8",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "df3f0852fe572244",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "48b5a4f31457f590",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "639594b7070bb9ec",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "30eafe07e630f16f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "46b0c97b21159b33",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dfbb7a519ff75ea0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e7e35bfda9ea283f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ec229074ce671bc4",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d0e248262b8e9705",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "eb75c99e81e5b6b6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "abab9cfdfcefeedd",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "df5a8479a5e5ed60",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e94af0562afeb813",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ff2f8cb92ac2d883",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "64650c0949513701",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "36c6cec370e81975",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "861ba4b42784311b",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7a7c5a003a6da6fd",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f31333377ed72f84",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ceca88254faf2d91",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4ace250de01655e6",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "85e5cfafc0daa86c",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 0.9849
+  },
+  {
+    "flow_id": "2eca540e31480091",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6ade8cdc6db73c03",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6cea15440388da7b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ff856b5b73fe07e3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "cc21ffcf6f4affea",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f8638ec0621048e7",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "bf7a7a8c11d48f8b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "46cba12e0dcae891",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9f05d5712c0704a2",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9994
+  },
+  {
+    "flow_id": "6ec1d916cc7da8c9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "551999c1459d49a7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5f7de29ea4967f06",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3c35916e5515c25d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "34336eb05f4d8692",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5490cc0b7774307f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "2bcd42fdb36d067e",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "eeade889be357927",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "5910592089a895d2",
+    "risk_tier": 2,
+    "risk_label": "Elevated",
+    "action": "RE_AUTHENTICATE",
+    "description": "Exploitation attempt -- forcing 802.1X re-auth.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6e97db68cf0ace32",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9c197aa5bb877445",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0d861d7647a6acbc",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3bae0f0e15e9d85f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0d2d259d1989d9b9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d4d97cd565046f36",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9140a1fa02056b24",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f49d039d5313f505",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "db7cd5e5ff830ee3",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f9b10b2be78c0a23",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d31f0337e7abdadd",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "056b5c61bbe5465a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "032986104222b801",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "3570f63f981db60d",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4912eafde01a2a96",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dd4e0660b91c9ef0",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "fb332b558976c056",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ac74b3abf8e7e99b",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "95e2887253660e39",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f5c539488a1fd852",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "0be36e611b9284ef",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c9f30c7acc723637",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4c87be7b56b5cdd9",
+    "risk_tier": 1,
+    "risk_label": "Low",
+    "action": "SOC_ALERT",
+    "description": "Recon detected -- alert to SOC.",
+    "confidence": 0.9988
+  },
+  {
+    "flow_id": "0e5f018d1468d648",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9e97232c7636c83f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "14221678944e81e7",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "379778bd04a1f2da",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "d2e3d1e9392ff9f5",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4a31f0555469dafd",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f74e3d1fa4357213",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "4544fade60241632",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "9636eaebf79d5730",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "aedaf0e8a28db3b7",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f8a06ef481533053",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "46edd26bb0d11061",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "24ff5c127f3ef43a",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b3fead74ac5bb1c3",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "50187cd593cec2ee",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "69d516ea6601758c",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "749b51ba9d2edfbc",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b941fc25a4978e75",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "dbf9c92417ad13a1",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "7e8ce7aeab4011c9",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c3dc4730d2c61785",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "62f2565f9eaa062b",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "b89b1cb285106432",
+    "risk_tier": 2,
+    "risk_label": "Elevated",
+    "action": "RE_AUTHENTICATE",
+    "description": "Exploitation attempt -- forcing 802.1X re-auth.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "ab2517e679114e0f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "6b5bcba1b0ba2236",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e563a107dacaf20f",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "41046a59bcc5e8c0",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "578df96c0b935100",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "f2652d936bfde38d",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "c5fe9b36610a0f04",
+    "risk_tier": 0,
+    "risk_label": "Negligible",
+    "action": "LOG_ONLY",
+    "description": "Normal traffic -- logged for audit.",
+    "confidence": 1.0
+  },
+  {
+    "flow_id": "e5a5ab0a2edb17f6",
+    "risk_tier": 3,
+    "risk_label": "Critical",
+    "action": "MAC_ISOLATION",
+    "description": "Critical threat -- MAC isolation + port shutdown.",
+    "confidence": 1.0
+  }
+]

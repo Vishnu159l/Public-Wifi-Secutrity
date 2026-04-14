@@ -207,7 +207,7 @@ with r1c1:
         height=400,
         showlegend=False,
     )
-    st.plotly_chart(fig_donut, use_container_width=True)
+    st.plotly_chart(fig_donut, width="stretch")
 
 with r1c2:
     st.markdown("### 🔥 Confusion Matrix")
@@ -227,7 +227,7 @@ with r1c2:
         margin=dict(l=20, r=20, t=30, b=20),
         height=400,
     )
-    st.plotly_chart(fig_cm, use_container_width=True)
+    st.plotly_chart(fig_cm, width="stretch")
 
 st.markdown("---")
 
@@ -260,7 +260,7 @@ with r2c1:
         margin=dict(l=10, r=60, t=20, b=40),
         height=550,
     )
-    st.plotly_chart(fig_imp, use_container_width=True)
+    st.plotly_chart(fig_imp, width="stretch")
 
 with r2c2:
     st.markdown("### 📈 Per-Class Performance")
@@ -302,20 +302,177 @@ with r2c2:
             height=350,
             legend=dict(orientation="h", y=-0.15),
         )
-        st.plotly_chart(fig_perf, use_container_width=True)
+        st.plotly_chart(fig_perf, width="stretch")
         
         st.dataframe(
             perf_df.style.format({
                 "Precision": "{:.4f}", "Recall": "{:.4f}", "F1-Score": "{:.4f}"
             }),
-            use_container_width=True,
+            width="stretch",
             hide_index=True,
         )
 
 st.markdown("---")
 
 # ═══════════════════════════════════════════════════════════════════════
-#  Row 3: Action Logic Summary + Action Log
+#  Row 3: Normalized Confusion Matrix + Radar Metrics
+# ═══════════════════════════════════════════════════════════════════════
+r3c1, r3c2 = st.columns(2)
+
+with r3c1:
+    st.markdown("### 🧮 Normalized Confusion Matrix")
+    cm_row_sums = cm.sum(axis=1)
+    cm_norm = np.around(cm.astype('float') / np.maximum(cm_row_sums[:, np.newaxis], 1), decimals=3)
+    fig_norm = px.imshow(
+        cm_norm,
+        labels=dict(x="Predicted", y="Actual", color="Rate"),
+        x=tier_labels_short,
+        y=tier_labels_short,
+        color_continuous_scale=["#0d1117", "#00d2ff"],
+        text_auto=True,
+    )
+    fig_norm.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        margin=dict(l=20, r=20, t=30, b=20),
+        height=400,
+    )
+    st.plotly_chart(fig_norm, width="stretch")
+
+with r3c2:
+    st.markdown("### 🕸️ Class Performance Radar")
+    fig_radar = go.Figure()
+    categories = ['Precision', 'Recall', 'F1-Score']
+    for row in perf_data:
+        color = TIER_COLORS.get(row["Tier"], "#fff")
+        fig_radar.add_trace(go.Scatterpolar(
+            r=[row["Precision"], row["Recall"], row["F1-Score"]],
+            theta=categories,
+            fill='toself',
+            name=row["Tier"],
+            line=dict(color=color),
+            marker=dict(color=color),
+            opacity=0.7
+        ))
+    fig_radar.update_layout(
+        polar=dict(
+            radialaxis=dict(visible=True, range=[0, 1], gridcolor="rgba(255,255,255,0.1)", linecolor="rgba(255,255,255,0.1)"),
+            angularaxis=dict(gridcolor="rgba(255,255,255,0.1)", linecolor="rgba(255,255,255,0.1)"),
+            bgcolor="rgba(0,0,0,0)"
+        ),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        margin=dict(l=40, r=40, t=30, b=30),
+        height=400,
+        showlegend=True,
+    )
+    st.plotly_chart(fig_radar, width="stretch")
+
+st.markdown("---")
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Row 4: Cumulative Feature Importance + Prediction Outcomes
+# ═══════════════════════════════════════════════════════════════════════
+r4c1, r4c2 = st.columns(2)
+
+with r4c1:
+    st.markdown("### 📈 Cumulative Feature Importance")
+    sorted_imp = importance.sort_values(by="importance", ascending=False).head(50)
+    cum_imp = sorted_imp["importance"].cumsum().values
+    feat_names = sorted_imp["feature"].values
+    
+    fig_cum = go.Figure()
+    fig_cum.add_trace(go.Scatter(
+        x=list(range(1, len(cum_imp) + 1)),
+        y=cum_imp,
+        mode="lines+markers",
+        line=dict(color="#7b2ff7", width=3),
+        marker=dict(size=6, color="#00d2ff"),
+        hovertext=feat_names,
+        hoverinfo="text+y"
+    ))
+    fig_cum.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        xaxis=dict(title="Number of Top Features", gridcolor="rgba(255,255,255,0.05)"),
+        yaxis=dict(title="Cumulative Importance Score", gridcolor="rgba(255,255,255,0.05)", range=[0, 1.05]),
+        margin=dict(l=20, r=20, t=30, b=20),
+        height=400,
+    )
+    st.plotly_chart(fig_cum, width="stretch")
+
+with r4c2:
+    st.markdown("### ✅ Prediction Outcomes (Correct vs Missed)")
+    correct = np.diag(cm)
+    total_act = cm.sum(axis=1)
+    missed = total_act - correct
+
+    fig_stack = go.Figure()
+    fig_stack.add_trace(go.Bar(
+        name='Correct', x=tier_labels_short, y=correct,
+        marker_color="#2ecc71", text=correct, textposition="inside"
+    ))
+    fig_stack.add_trace(go.Bar(
+        name='Missed', x=tier_labels_short, y=missed,
+        marker_color="#e74c3c", text=missed, textposition="outside"
+    ))
+    fig_stack.update_layout(
+        barmode='stack',
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        xaxis=dict(title="Risk Tier", gridcolor="rgba(255,255,255,0.05)"),
+        yaxis=dict(title="Count", gridcolor="rgba(255,255,255,0.05)"),
+        margin=dict(l=20, r=20, t=30, b=20),
+        height=400,
+        legend=dict(orientation="h", y=-0.15),
+    )
+    st.plotly_chart(fig_stack, width="stretch")
+
+st.markdown("---")
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Row 5: Class Support Distribution
+# ═══════════════════════════════════════════════════════════════════════
+r5c1, r5c2 = st.columns([3, 2])
+
+with r5c1:
+    st.markdown("### 📊 Test Set Class Imbalance Profile")
+    fig_support = go.Figure(go.Bar(
+        x=tier_labels_short,
+        y=tier_totals,
+        marker_color=[TIER_COLORS[t] for t in tier_labels_short],
+        text=[f"{val:,}" for val in tier_totals],
+        textposition="outside",
+        textfont=dict(size=13),
+    ))
+    fig_support.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        xaxis=dict(title="Risk Tier", gridcolor="rgba(255,255,255,0.05)"),
+        yaxis=dict(title="Support (Log Scale)", type="log", gridcolor="rgba(255,255,255,0.05)"),
+        margin=dict(l=20, r=20, t=30, b=20),
+        height=350,
+    )
+    st.plotly_chart(fig_support, width="stretch")
+
+with r5c2:
+    st.markdown("### 📝 Class Support Statistics")
+    support_df = pd.DataFrame({
+        "Risk Tier": tier_labels_short,
+        "Support": tier_totals,
+        "Percentage": [f"{(val/tier_totals.sum())*100:.2f}%" for val in tier_totals]
+    })
+    st.dataframe(support_df, width="stretch", hide_index=True)
+
+st.markdown("---")
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Row 6: Action Logic Summary + Action Log
 # ═══════════════════════════════════════════════════════════════════════
 st.markdown("### ⚡ Automated Response Actions")
 
@@ -340,7 +497,7 @@ if action_log:
         action_df = pd.DataFrame(action_log[:200])
         display_cols = ["flow_id", "risk_label", "action", "description"]
         display_cols = [c for c in display_cols if c in action_df.columns]
-        st.dataframe(action_df[display_cols], use_container_width=True, hide_index=True)
+        st.dataframe(action_df[display_cols], width="stretch", hide_index=True)
 
 st.markdown("---")
 
@@ -392,7 +549,7 @@ with st.expander("▸ Open Simulator", expanded=False):
             height=300,
             margin=dict(l=20, r=20, t=40, b=20),
         )
-        st.plotly_chart(fig_proba, use_container_width=True)
+        st.plotly_chart(fig_proba, width="stretch")
 
 # ═══════════════════════════════════════════════════════════════════════
 #  Footer

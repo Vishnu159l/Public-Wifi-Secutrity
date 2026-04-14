@@ -25,19 +25,19 @@ class RiskClassifierNet(nn.Module):
     def __init__(self, n_features, n_classes=4):
         super().__init__()
         self.network = nn.Sequential(
-            nn.Linear(n_features, 256),
+            nn.Linear(n_features, 512),
+            nn.BatchNorm1d(512),
+            nn.GELU(),
+            nn.Dropout(0.2),
+            nn.Linear(512, 256),
             nn.BatchNorm1d(256),
-            nn.ReLU(),
-            nn.Dropout(0.3),
+            nn.GELU(),
+            nn.Dropout(0.2),
             nn.Linear(256, 128),
             nn.BatchNorm1d(128),
-            nn.ReLU(),
-            nn.Dropout(0.3),
-            nn.Linear(128, 64),
-            nn.BatchNorm1d(64),
-            nn.ReLU(),
-            nn.Dropout(0.2),
-            nn.Linear(64, n_classes),
+            nn.GELU(),
+            nn.Dropout(0.1),
+            nn.Linear(128, n_classes),
         )
 
     def forward(self, x):
@@ -291,7 +291,7 @@ if history:
             height=350,
             legend=dict(orientation="h", y=-0.2),
         )
-        st.plotly_chart(fig_loss, use_container_width=True)
+        st.plotly_chart(fig_loss, width="stretch")
 
     with tc2:
         fig_acc = go.Figure()
@@ -318,92 +318,84 @@ if history:
             height=350,
             legend=dict(orientation="h", y=-0.2),
         )
-        st.plotly_chart(fig_acc, use_container_width=True)
+        st.plotly_chart(fig_acc, width="stretch")
 
     st.markdown("---")
 
 # ═══════════════════════════════════════════════════════════════════════
-#  Row 2: Risk Distribution + Confusion Matrix
+#  Row 2: Risk Distribution (Treemap) + Prediction Flow (Sankey)
 # ═══════════════════════════════════════════════════════════════════════
 r1c1, r1c2 = st.columns(2)
 
 with r1c1:
-    st.markdown("### 📊 Risk Tier Distribution")
-    tier_labels = [TIER_NAMES[i] for i in range(len(tier_totals))]
-    colors = [TIER_COLORS[n] for n in tier_labels]
-    fig_donut = go.Figure(go.Pie(
-        labels=tier_labels,
-        values=tier_totals.tolist(),
-        hole=0.55,
-        marker=dict(colors=colors, line=dict(color="#0a0a1a", width=2)),
-        textinfo="label+percent",
-        textfont=dict(size=13),
-    ))
-    fig_donut.update_layout(
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#c9d1d9"),
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=400,
-        showlegend=False,
+    st.markdown("### 🗺️ Risk Tier Treemap")
+    tier_labels_short = [TIER_NAMES[i] for i in range(cm.shape[0])]
+    df_tree = pd.DataFrame({"Tier": tier_labels_short, "Count": tier_totals, "Root": "Dataset"})
+    fig_tree = px.treemap(
+        df_tree, path=["Root", "Tier"], values="Count", color="Tier",
+        color_discrete_map=TIER_COLORS
     )
-    st.plotly_chart(fig_donut, use_container_width=True)
+    fig_tree.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"), margin=dict(l=10, r=10, t=30, b=10), height=400
+    )
+    fig_tree.update_traces(marker=dict(line=dict(color='#080818', width=2)))
+    st.plotly_chart(fig_tree, width="stretch")
 
 with r1c2:
-    st.markdown("### 🔥 Confusion Matrix")
-    tier_labels_short = [TIER_NAMES[i] for i in range(cm.shape[0])]
-    fig_cm = px.imshow(
-        cm,
-        labels=dict(x="Predicted", y="Actual", color="Count"),
-        x=tier_labels_short,
-        y=tier_labels_short,
-        color_continuous_scale=["#080818", "#1a1a3e", "#a855f7", "#e74c3c"],
-        text_auto=True,
+    st.markdown("### 🔀 Prediction Flow (Sankey)")
+    labels = [f"True: {t}" for t in tier_labels_short] + [f"Pred: {t}" for t in tier_labels_short]
+    source, target, value, link_color = [], [], [], []
+    for i in range(4):
+        for j in range(4):
+            if cm[i, j] > 0:
+                source.append(i)
+                target.append(j + 4)
+                value.append(cm[i, j])
+                link_color.append(TIER_COLORS[tier_labels_short[i]] + "80")
+                
+    fig_sankey = go.Figure(data=[go.Sankey(
+        node=dict(
+            pad=15, thickness=20, line=dict(color="#1a1a3e", width=0.5),
+            label=labels,
+            color=[TIER_COLORS[t] for t in tier_labels_short] * 2
+        ),
+        link=dict(source=source, target=target, value=value, color=link_color)
+    )])
+    fig_sankey.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9", size=11), margin=dict(l=10, r=10, t=30, b=10), height=400
     )
-    fig_cm.update_layout(
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#c9d1d9"),
-        margin=dict(l=20, r=20, t=30, b=20),
-        height=400,
-    )
-    st.plotly_chart(fig_cm, use_container_width=True)
+    st.plotly_chart(fig_sankey, width="stretch")
 
 st.markdown("---")
 
 # ═══════════════════════════════════════════════════════════════════════
-#  Row 3: Feature Importance + Per-Class Metrics
+#  Row 3: Polar Feature Importance + Class Performance Radar
 # ═══════════════════════════════════════════════════════════════════════
 r2c1, r2c2 = st.columns([3, 2])
 
 with r2c1:
-    st.markdown("### 🏆 Top-20 Feature Importance (Gradient Attribution)")
-    top20 = importance.head(20).iloc[::-1]
-    fig_imp = go.Figure(go.Bar(
-        y=top20["feature"],
-        x=top20["importance"],
-        orientation="h",
-        marker=dict(
-            color=top20["importance"],
-            colorscale=[[0, "#11112b"], [0.5, "#a855f7"], [1, "#06b6d4"]],
-        ),
-        text=top20["importance"].round(4),
-        textposition="outside",
-        textfont=dict(size=11),
+    st.markdown("### 🌪️ Gradient Attribution (Polar Bar)")
+    top15 = importance.head(15).iloc[::-1]
+    fig_polar = go.Figure(go.Barpolar(
+        r=top15["importance"], theta=top15["feature"],
+        marker_color=top15["importance"],
+        marker_colorscale=["#11112b", "#a855f7", "#06b6d4"],
+        opacity=0.8
     ))
-    fig_imp.update_layout(
-        paper_bgcolor="rgba(0,0,0,0)",
-        plot_bgcolor="rgba(0,0,0,0)",
-        font=dict(color="#c9d1d9"),
-        xaxis=dict(title="Importance", gridcolor="rgba(255,255,255,0.05)"),
-        yaxis=dict(title=""),
-        margin=dict(l=10, r=60, t=20, b=40),
-        height=550,
+    fig_polar.update_layout(
+        polar=dict(
+            radialaxis=dict(visible=False),
+            angularaxis=dict(gridcolor="rgba(255,255,255,0.05)", linecolor="rgba(255,255,255,0.05)")
+        ),
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", font=dict(color="#c9d1d9", size=10),
+        margin=dict(l=20, r=20, t=30, b=20), height=450
     )
-    st.plotly_chart(fig_imp, use_container_width=True)
+    st.plotly_chart(fig_polar, width="stretch")
 
 with r2c2:
-    st.markdown("### 📈 Per-Class Performance")
+    st.markdown("### 🕸️ Class Performance Radar")
     report = metrics.get("report", {})
     perf_data = []
     for tier_name in ["Negligible", "Low", "Elevated", "Critical"]:
@@ -415,55 +407,202 @@ with r2c2:
                 "Precision": round(r.get("precision", 0), 4),
                 "Recall": round(r.get("recall", 0), 4),
                 "F1-Score": round(r.get("f1-score", 0), 4),
-                "Support": int(r.get("support", 0)),
             })
-    if perf_data:
-        perf_df = pd.DataFrame(perf_data)
-
-        fig_perf = go.Figure()
-        for metric, color in [("Precision", "#06b6d4"), ("Recall", "#a855f7"), ("F1-Score", "#2ecc71")]:
-            fig_perf.add_trace(go.Bar(
-                name=metric,
-                x=perf_df["Tier"],
-                y=perf_df[metric],
-                marker_color=color,
-                text=perf_df[metric],
-                textposition="outside",
-                textfont=dict(size=11),
-            ))
-        fig_perf.update_layout(
-            barmode="group",
-            paper_bgcolor="rgba(0,0,0,0)",
-            plot_bgcolor="rgba(0,0,0,0)",
-            font=dict(color="#c9d1d9"),
-            yaxis=dict(range=[0, 1.15], gridcolor="rgba(255,255,255,0.05)"),
-            margin=dict(l=20, r=20, t=20, b=40),
-            height=350,
-            legend=dict(orientation="h", y=-0.15),
-        )
-        st.plotly_chart(fig_perf, use_container_width=True)
-
-        st.dataframe(
-            perf_df.style.format({
-                "Precision": "{:.4f}", "Recall": "{:.4f}", "F1-Score": "{:.4f}"
-            }),
-            use_container_width=True,
-            hide_index=True,
-        )
+            
+    fig_radar = go.Figure()
+    categories = ['Precision', 'Recall', 'F1-Score']
+    for row in perf_data:
+        color = TIER_COLORS.get(row["Tier"], "#fff")
+        fig_radar.add_trace(go.Scatterpolar(
+            r=[row["Precision"], row["Recall"], row["F1-Score"]],
+            theta=categories,
+            fill='toself',
+            name=row["Tier"],
+            line=dict(color=color),
+            marker=dict(color=color),
+            opacity=0.7
+        ))
+    fig_radar.update_layout(
+        polar=dict(
+            radialaxis=dict(visible=True, range=[0, 1], gridcolor="rgba(255,255,255,0.1)", linecolor="rgba(255,255,255,0.1)"),
+            angularaxis=dict(gridcolor="rgba(255,255,255,0.1)", linecolor="rgba(255,255,255,0.1)"),
+            bgcolor="rgba(0,0,0,0)"
+        ),
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)", font=dict(color="#c9d1d9"),
+        margin=dict(l=40, r=40, t=30, b=30), height=400, showlegend=True, legend=dict(orientation="h", y=-0.2)
+    )
+    st.plotly_chart(fig_radar, width="stretch")
 
 st.markdown("---")
 
 # ═══════════════════════════════════════════════════════════════════════
-#  Row 4: Network Architecture Visualization
+#  Row 4: Normalized Confusion Matrix + Radar Metrics
+# ═══════════════════════════════════════════════════════════════════════
+r4c1, r4c2 = st.columns(2)
+
+with r4c1:
+    st.markdown("### 🧮 Normalized Confusion Matrix")
+    cm_row_sums = cm.sum(axis=1)
+    cm_norm = np.around(cm.astype('float') / np.maximum(cm_row_sums[:, np.newaxis], 1), decimals=3)
+    fig_norm = px.imshow(
+        cm_norm,
+        labels=dict(x="Predicted", y="Actual", color="Rate"),
+        x=tier_labels_short,
+        y=tier_labels_short,
+        color_continuous_scale=["#11112b", "#06b6d4"],
+        text_auto=True,
+    )
+    fig_norm.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        margin=dict(l=20, r=20, t=30, b=20),
+        height=400,
+    )
+    st.plotly_chart(fig_norm, width="stretch")
+
+with r4c2:
+    st.markdown("### 🕸️ Class Performance Radar")
+    fig_radar = go.Figure()
+    categories = ['Precision', 'Recall', 'F1-Score']
+    for row in perf_data:
+        color = TIER_COLORS.get(row["Tier"], "#fff")
+        fig_radar.add_trace(go.Scatterpolar(
+            r=[row["Precision"], row["Recall"], row["F1-Score"]],
+            theta=categories,
+            fill='toself',
+            name=row["Tier"],
+            line=dict(color=color),
+            marker=dict(color=color),
+            opacity=0.7
+        ))
+    fig_radar.update_layout(
+        polar=dict(
+            radialaxis=dict(visible=True, range=[0, 1], gridcolor="rgba(255,255,255,0.1)", linecolor="rgba(255,255,255,0.1)"),
+            angularaxis=dict(gridcolor="rgba(255,255,255,0.1)", linecolor="rgba(255,255,255,0.1)"),
+            bgcolor="rgba(0,0,0,0)"
+        ),
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        margin=dict(l=40, r=40, t=30, b=30),
+        height=400,
+        showlegend=True,
+    )
+    st.plotly_chart(fig_radar, width="stretch")
+
+st.markdown("---")
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Row 5: Cumulative Feature Importance + Prediction Outcomes
+# ═══════════════════════════════════════════════════════════════════════
+r5c1, r5c2 = st.columns(2)
+
+with r5c1:
+    st.markdown("### 📈 Cumulative Feature Importance (Gradient)")
+    sorted_imp = importance.sort_values(by="importance", ascending=False).head(50)
+    cum_imp = sorted_imp["importance"].cumsum().values
+    feat_names = sorted_imp["feature"].values
+    
+    fig_cum = go.Figure()
+    fig_cum.add_trace(go.Scatter(
+        x=list(range(1, len(cum_imp) + 1)),
+        y=cum_imp,
+        mode="lines+markers",
+        line=dict(color="#a855f7", width=3),
+        marker=dict(size=6, color="#06b6d4"),
+        hovertext=feat_names,
+        hoverinfo="text+y"
+    ))
+    fig_cum.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        xaxis=dict(title="Number of Top Features", gridcolor="rgba(255,255,255,0.05)"),
+        yaxis=dict(title="Cumulative Importance Score", gridcolor="rgba(255,255,255,0.05)", range=[0, 1.05]),
+        margin=dict(l=20, r=20, t=30, b=20),
+        height=400,
+    )
+    st.plotly_chart(fig_cum, width="stretch")
+
+with r5c2:
+    st.markdown("### ✅ Prediction Outcomes (Correct vs Missed)")
+    correct = np.diag(cm)
+    total_act = cm.sum(axis=1)
+    missed = total_act - correct
+
+    fig_stack = go.Figure()
+    fig_stack.add_trace(go.Bar(
+        name='Correct', x=tier_labels_short, y=correct,
+        marker_color="#2ecc71", text=correct, textposition="inside"
+    ))
+    fig_stack.add_trace(go.Bar(
+        name='Missed', x=tier_labels_short, y=missed,
+        marker_color="#e74c3c", text=missed, textposition="outside"
+    ))
+    fig_stack.update_layout(
+        barmode='stack',
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        xaxis=dict(title="Risk Tier", gridcolor="rgba(255,255,255,0.05)"),
+        yaxis=dict(title="Count", gridcolor="rgba(255,255,255,0.05)"),
+        margin=dict(l=20, r=20, t=30, b=20),
+        height=400,
+        legend=dict(orientation="h", y=-0.15),
+    )
+    st.plotly_chart(fig_stack, width="stretch")
+
+st.markdown("---")
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Row 6: Class Support Distribution
+# ═══════════════════════════════════════════════════════════════════════
+r6c1, r6c2 = st.columns([3, 2])
+
+with r6c1:
+    st.markdown("### 📊 Test Set Class Imbalance Profile")
+    fig_support = go.Figure(go.Bar(
+        x=tier_labels_short,
+        y=tier_totals,
+        marker_color=[TIER_COLORS[t] for t in tier_labels_short],
+        text=[f"{val:,}" for val in tier_totals],
+        textposition="outside",
+        textfont=dict(size=13),
+    ))
+    fig_support.update_layout(
+        paper_bgcolor="rgba(0,0,0,0)",
+        plot_bgcolor="rgba(0,0,0,0)",
+        font=dict(color="#c9d1d9"),
+        xaxis=dict(title="Risk Tier", gridcolor="rgba(255,255,255,0.05)"),
+        yaxis=dict(title="Support (Log Scale)", type="log", gridcolor="rgba(255,255,255,0.05)"),
+        margin=dict(l=20, r=20, t=30, b=20),
+        height=350,
+    )
+    st.plotly_chart(fig_support, width="stretch")
+
+with r6c2:
+    st.markdown("### 📝 Class Support Statistics")
+    support_df = pd.DataFrame({
+        "Risk Tier": tier_labels_short,
+        "Support": tier_totals,
+        "Percentage": [f"{(val/tier_totals.sum())*100:.2f}%" for val in tier_totals]
+    })
+    st.dataframe(support_df, width="stretch", hide_index=True)
+
+st.markdown("---")
+
+# ═══════════════════════════════════════════════════════════════════════
+#  Row 7: Network Architecture Visualization
 # ═══════════════════════════════════════════════════════════════════════
 st.markdown("### 🏗️ Neural Network Architecture")
 
 arch_cols = st.columns(5)
 layers = [
     ("Input", f"{metrics['n_features']}", "#6366f1"),
-    ("Hidden 1", "256 → BN → ReLU → Drop(0.3)", "#a855f7"),
-    ("Hidden 2", "128 → BN → ReLU → Drop(0.3)", "#8b5cf6"),
-    ("Hidden 3", "64 → BN → ReLU → Drop(0.2)", "#7c3aed"),
+    ("Hidden 1", "512 → BN → GELU → Drop(0.2)", "#a855f7"),
+    ("Hidden 2", "256 → BN → GELU → Drop(0.2)", "#8b5cf6"),
+    ("Hidden 3", "128 → BN → GELU → Drop(0.1)", "#7c3aed"),
     ("Output", "4 classes", "#06b6d4"),
 ]
 for col, (name, desc, color) in zip(arch_cols, layers):
@@ -478,7 +617,7 @@ for col, (name, desc, color) in zip(arch_cols, layers):
 st.markdown("---")
 
 # ═══════════════════════════════════════════════════════════════════════
-#  Row 5: Action Logic Summary + Action Log
+#  Row 8: Action Logic Summary + Action Log
 # ═══════════════════════════════════════════════════════════════════════
 st.markdown("### ⚡ Automated Response Actions")
 
@@ -503,12 +642,12 @@ if action_log:
         action_df = pd.DataFrame(action_log[:200])
         display_cols = ["flow_id", "risk_label", "action", "description", "confidence"]
         display_cols = [c for c in display_cols if c in action_df.columns]
-        st.dataframe(action_df[display_cols], use_container_width=True, hide_index=True)
+        st.dataframe(action_df[display_cols], width="stretch", hide_index=True)
 
 st.markdown("---")
 
 # ═══════════════════════════════════════════════════════════════════════
-#  Row 6: Live Classifier Simulator
+#  Row 9: Live Classifier Simulator
 # ═══════════════════════════════════════════════════════════════════════
 st.markdown("### 🧪 Live Classification Simulator")
 st.markdown("*Enter flow metadata values to predict the risk tier using the neural network.*")
@@ -559,7 +698,7 @@ with st.expander("▸ Open Simulator", expanded=False):
             height=300,
             margin=dict(l=20, r=20, t=40, b=20),
         )
-        st.plotly_chart(fig_proba, use_container_width=True)
+        st.plotly_chart(fig_proba, width="stretch")
 
 # ═══════════════════════════════════════════════════════════════════════
 #  Footer
